@@ -1,0 +1,17 @@
+body{
+	background: url("multimedia/neblinaop2.png") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	
+}
+.luna{
+	background:slategray;
+	filter:alpha(opacity=50);
+	opacity:0.6;
+	border-radius: 25px;
+	height: 650px;
+	width: auto;
+	margin: 16px;
+}
