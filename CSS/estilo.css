@@ -1,17 +1,29 @@
-body{
-	background: url("multimedia/neblinaop2.png") no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	
+*{
+    margin: 0;
+    padding: 0;
 }
-.luna{
-	background:slategray;
-	filter:alpha(opacity=50);
-	opacity:0.6;
-	border-radius: 25px;
-	height: 650px;
-	width: auto;
-	margin: 16px;
+
+
+h1{
+    color: ghostwhite;
+    position: relative;
+    left: 85px;
+    
+}
+body{
+    background: url(multimedia/space.jpg);
+}
+
+#tierra{
+    position: absolute;
+    top:300px;
+    left: 200px; 
+}
+
+#luna{
+    position: absolute;
+    left:870px;
+    bottom: 400px;
+    
+
 }

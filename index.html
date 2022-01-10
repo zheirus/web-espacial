@@ -3,12 +3,41 @@
 <head>
 	<title>Space</title>
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=divice-width, initial-scale=1"/>
 	<link rel="stylesheet"  href="CSS/estilo.css">
+	<script src="javascript/interaccion.js"></script>
+	
 </head>
 <body>
-	<div>tierra</div>
-	<div>distancia</div>
-	<div>misiones</div>
-	<div>luna</div>
-	<div>lado oscuro</div>
+	<div id="tierra">
+		<h1>TIERRA</h1>
+		<model-viewer  
+		src="CSS/multimedia/tierra.glb" 
+		ar
+		ar-modes="webxr scene-viewer quick-look"  
+		camera-controls 
+		poster="CSS/multimedia/postertierra.png" 
+		auto-rotate
+		camera-orbit="0.40deg 89.69deg auto"
+		></model-viewer>	
+	</div>
+
+	<div id="luna">
+		<h1>LUNA</h1>
+		<model-viewer 
+		bounds="tight" 
+		src="CSS/multimedia/luna.glb" 
+		ar 
+		ar-modes="webxr scene-viewer quick-look" 
+		camera-controls 
+		poster="CSS/multimedia/posterluna.png"  
+		exposure="0.45"  
+		auto-rotate
+		></model-viewer>
+	</div>
+
+	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
 </body>
