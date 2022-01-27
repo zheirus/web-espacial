@@ -1,43 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<title>Space</title>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-	<meta name="viewport" content="width=divice-width, initial-scale=1"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=divice-width, initial-scale=1.0"/>
 	<link rel="stylesheet"  href="CSS/estilo.css">
-	<script src="javascript/interaccion.js"></script>
-	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css">
+    <title>Space</title>
 </head>
 <body>
-	<div id="tierra">
-		<h1>TIERRA</h1>
-		<model-viewer  
-		src="CSS/multimedia/tierra.glb" 
-		ar
-		ar-modes="webxr scene-viewer quick-look"  
-		camera-controls 
-		poster="CSS/multimedia/postertierra.png" 
-		auto-rotate
-		camera-orbit="0.40deg 89.69deg auto"
-		></model-viewer>	
-	</div>
-
-	<div id="luna">
-		<h1>LUNA</h1>
-		<model-viewer 
-		bounds="tight" 
-		src="CSS/multimedia/luna.glb" 
-		ar 
-		ar-modes="webxr scene-viewer quick-look" 
-		camera-controls 
-		poster="CSS/multimedia/posterluna.png"  
-		exposure="0.45"  
-		auto-rotate
-		></model-viewer>
-	</div>
-
+	<main id="fullpage">
+		<header class="section">
+            <h1>inicio</h1>
+        </header>
+        <section class="section">
+            <h1 id="titulotierra">TERRA</h1>
+            <div id="tierra">
+                <model-viewer 
+                bounds="tight" 
+                src="CSS/multimedia/tierra.glb" 
+                ar  
+                camera-controls
+                ar-modes="webxr scene-viewer quick-look" 
+                environment-image="neutral" 
+                poster="CSS/multimedia/postertierra.png"  
+                exposure="1.59" 
+                auto-rotate
+                ></model-viewer>
+                    
+            </div>
+            <h2 id="tituloluna">LUNA</h2>
+            <div id="luna">
+                <model-viewer 
+                bounds="tight" 
+                src="CSS/multimedia/luna.glb" 
+                ar 
+                ar-modes="webxr scene-viewer quick-look" 
+                camera-controls 
+                poster="CSS/multimedia/posterluna.png"  
+                exposure="0.45"  
+                auto-rotate
+                ></model-viewer>
+            </div>
+            
+            <div id="lineadistancia"></div>
+            <div id="distancia">
+                <ul class="nav">
+                    <h3 id="dtl">Distancia</h3>	
+                    <li><p>M. Pasadas</p>
+                        <ul>
+                            <li><p>Apollo 1: 21/02/1967 Fracaso</p></li>
+                            <li><p>Apollo 6: 04/04/1968 Exito Parcial</p></li>
+                            <li><p>Apollo 8: 21/12/1968 Exito</p></li>
+                            <li><p>Apollo 10: 18/05/1969 Exito</p></li>
+                            <li><p>Apollo 11: 16/07/1969 Exito</p></li>
+                            <li><p>Apollo 13: 11/04/1970 Exito Parcial</p></li>
+                            <li><p>Apollo 15: 26/07/1971 Exito</p></li>
+                            <li><p>Apollo Soyuz: 15/07/1975 Exito</p></li>
+                        </ul>
+                    </li>
+                    <li><p>M. Futuras</p>
+                        <ul>
+                            <li><p>EE.UU 2022 NASA En desarrolo</p></li>
+                            <li><p>Rusia 2022 ROSCOSMOS En desarrollo</p></li>
+                            <li><p>Japon 2022 JAXA En desarrollo</p></li>
+                            <li><p>Rusia 2023 ROSCOSMOS En desarrollo</p></li>
+                            <li><p>Rusia 2027 ROSCOSMOS En desarrollo</p></li>
+                            <li><p>Rusia 2029 ROSCOSMOS En desarrollo</p></li>
+                        </ul>
+                    </li>
+                </ul>	
+            </div>
+        </section>
+        <section class="section">
+            <h1>tierra marte</h1>
+        </section>
+        <section class="section">
+            <h1>marte jupiter</h1>
+        </section>
+        <section class="section">
+            <h1>jupiter saturno</h1>
+        </section>
+        <footer class="section">
+            <h1>contactos</h1>
+        </footer>
+	</main>    
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.js"></script>
 	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+	<script src="javascript/interaccion.js"></script>
 
 </body>
+
+</html>
