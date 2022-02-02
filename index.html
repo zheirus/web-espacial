@@ -9,6 +9,18 @@
     <title>Space</title>
 </head>
 <body>
+    <nav class="navd">
+        <ul id="menu" class="menu">
+            <li >
+                <a href="">inicio</a>
+            </li>
+
+
+
+
+
+        </ul>
+    </nav>
 	<main id="fullpage">
 		<header class="section">
             <h1>inicio</h1>
@@ -23,7 +35,8 @@
                 ar-modes="webxr scene-viewer quick-look" 
                 camera-controls environment-image="neutral" 
                 poster="css/multimedia/postermercurio.png"
-                auto-rotate>
+                auto-rotate
+                id="tamañomercurio">
                 </model-viewer>
             </div>
             <h1 id="titulovenus">VENUS</h1>
@@ -36,7 +49,8 @@
                 camera-controls 
                 environment-image="neutral" 
                 poster="css/multimedia/postervenus.png"  
-                auto-rotate>
+                auto-rotate
+                id="tamañovenus">
                 </model-viewer>
             </div>
             <div id="lineadistanciaMV"></div>
@@ -52,7 +66,8 @@
                 camera-controls 
                 environment-image="neutral" 
                 poster="css/multimedia/postervenus.png"  
-                auto-rotate>
+                auto-rotate
+                id="tamañovenus1">
                 </model-viewer>
             </div>
             <h1 id="titulotierra0">TERRA</h1>
@@ -67,6 +82,7 @@
                 poster="CSS/multimedia/postertierra.png"  
                 exposure="1.59" 
                 auto-rotate
+                id="tamañotierra0"
                 ></model-viewer>
             </div>
             <div id="lineadistanciaVT"></div>
@@ -84,6 +100,7 @@
                 poster="CSS/multimedia/postertierra.png"  
                 exposure="1.59" 
                 auto-rotate
+                id="tamañotierra"
                 ></model-viewer>
             </div>
             <h2 id="tituloluna">LUNA</h2>
@@ -97,6 +114,7 @@
                 poster="CSS/multimedia/posterluna.png"  
                 exposure="0.45"  
                 auto-rotate
+                id="tamañoluna"
                 ></model-viewer>
             </div>
             
@@ -130,8 +148,8 @@
             </div>
         </section>
         <section class="section">
-            <h1 id="titulotierra">TERRA</h1>
-            <div id="tierra">
+            <h1 id="titulotierra1">TERRA</h1>
+            <div id="tierra1">
                 <model-viewer 
                 bounds="tight" 
                 src="CSS/multimedia/tierra.glb" 
@@ -142,6 +160,7 @@
                 poster="CSS/multimedia/postertierra.png"  
                 exposure="1.59" 
                 auto-rotate
+                id="tamañotierra1"
                 ></model-viewer>
             </div>
             <h1 id="titulomarte">MARTE</h1>
@@ -154,7 +173,8 @@
                 camera-controls 
                 environment-image="neutral" 
                 poster="css/multimedia/postermarte.png" 
-                auto-rotate>
+                auto-rotate
+                id="tamañomarte">
                 </model-viewer>
             </div>
             <div id="lineadistanciaTM"></div>
@@ -170,7 +190,8 @@
                 camera-controls 
                 environment-image="neutral" 
                 poster="css/multimedia/postermarte.png" 
-                auto-rotate>
+                auto-rotate
+                id="tamañomarte1">
                 </model-viewer>
             </div>
             <h1 id="titulojupiter">JUPITER</h1>
@@ -183,7 +204,8 @@
                 camera-controls 
                 environment-image="neutral" 
                 poster="css/multimedia/posterjupiter.png" 
-                auto-rotate>
+                auto-rotate
+                id="tamañojupiter">
                 </model-viewer>
             </div>
             <div id="lineadistanciaMJ"></div>
@@ -199,7 +221,8 @@
                 camera-controls 
                 environment-image="neutral" 
                 poster="css/multimedia/posterjupiter.png" 
-                auto-rotate>
+                auto-rotate
+                id="tamañojupiter1">
                 </model-viewer>
             </div>
             <h1 id="titulosaturno">SATURNO</h1>
@@ -212,7 +235,9 @@
                 camera-controls 
                 environment-image="neutral" 
                 poster="css/multimedia/postersaturno.png"  
-                auto-rotate>
+                auto-rotate
+                exposure="0.45"
+                id="tamañosaturno">
                 </model-viewer>
             </div>
             <div id="lineadistanciaJS"></div>
@@ -228,7 +253,9 @@
                 camera-controls 
                 environment-image="neutral" 
                 poster="css/multimedia/postersaturno.png"  
-                auto-rotate>
+                auto-rotate
+                exposure="0.50"
+                id="tamañosaturno1">
                 </model-viewer>
             </div>
             <h1 id="titulourano">URANO</h1>
@@ -241,7 +268,8 @@
                 camera-controls 
                 environment-image="neutral" 
                 poster="css/multimedia/posterurano.png" 
-                auto-rotate>
+                auto-rotate
+                id="tamañourano">
                 </model-viewer>
             </div>
             <div id="lineadistanciaSU"></div>
@@ -257,7 +285,8 @@
                 camera-controls 
                 environment-image="neutral" 
                 poster="css/multimedia/posterurano.png" 
-                auto-rotate>
+                auto-rotate
+                id="tamañourano1">
                 </model-viewer>
             </div>
             <h1 id="tituloneptuno">NEPTUNO</h1>
@@ -270,7 +299,8 @@
                 camera-controls 
                 environment-image="neutral" 
                 poster="css/multimedia/posterneptuno.png"  
-                auto-rotate>
+                auto-rotate
+                id="tamañoneptuno">
                 </model-viewer>
             </div>
             <div id="lineadistanciaUN"></div>
