@@ -9,125 +9,149 @@ h1{
     color: azure;
     text-align: center;
 }
+
+/*navegacion derecha*/
+/*#fp-nav ul li a.active span, 
+.fp-slidesNav ul li a.active span, 
+#fp-nav ul li:hover a.active span, 
+.fp-slidesNav ul li:hover a.active span {
+    width: 16px;
+    height: 16px;
+    margin: -8px 0 0 -8px;
+    background: transparent;
+    box-sizing: border-box;
+    border: 1px solid orange;
+}
+*/
+#fp-nav ul li a.active span{
+    background:orange;
+    width: 30px;
+    height: 30px;
+}
+#fp-nav ul li div.fp-tooltip  {
+    color: orange;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 /*..................................................*/
 /*TITULOS DE LOS PLANETAS*/
 /*..................................................*/
 #titulomercurio{
     position: absolute;
-    color: azure;
+    color: #93A8AC;
     left: 11%;
     top: 25%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #titulovenus{
     position: absolute;
-    color: azure;
+    color: #93A8AC;
     left: 69%;
     top: 20%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #titulovenus1{
     position: absolute;
-    color: azure;
-    left: 14.5%;
+    color: #93A8AC;
+    left: 13%;
     top: 23%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #titulotierra0{
     position: absolute;
-    color: azure;
+    color: #93A8AC;
     left: 72%;
-    top: 24%;
+    top: 23%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #titulotierra{
     position: absolute;
-    color: azure;
+    color: #93A8AC;
     left: 16.5%;
     top: 23%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #tituloluna{
     position: absolute;
-    color: azure;
-    left: 75.5%;
+    color: #93A8AC;
+    left: 74.5%;
     top: 28%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #titulotierra1{
     position: absolute;
-    color: azure;
-    left: 14%;
+    color: #93A8AC;
+    left: 15.5%;
     top: 24%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #titulomarte{
     position: absolute;
-    color: azure;
-    left: 71.5%;
+    color: #93A8AC;
+    left: 72.5%;
     top:27%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #titulomarte1{
     position: absolute;
-    color: azure;
+    color: #93A8AC;
     left: 19.3%;
-    top:50%;
+    top:44%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 10px;
 }
 #titulojupiter{
     position: absolute;
-    color: azure;
-    left: 66%;
-    top:23%;
+    color: #93A8AC;
+    left: 69%;
+    top:19%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #titulojupiter1{
     position: absolute;
-    color: azure;
-    left: 14%;
-    top:29%;
+    color: #93A8AC;
+    left: 15%;
+    top:23%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #titulosaturno{
     position: absolute;
-    color: azure;
-    left: 69%;
-    top: 35%;
+    color: #93A8AC;
+    left: 67%;
+    top: 27%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #titulosaturno1{
     position: absolute;
-    color: azure;
-    left: 18%;
-    top:29%;
+    color: #93A8AC;
+    left: 16%;
+    top:25%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #titulourano{
     position: absolute;
-    color: azure;
-    left: 73.5%;
-    top:39%;
+    color: #93A8AC;
+    left: 70%;
+    top:32%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
 }
 #titulourano1{
     position: absolute;
-    color: azure;
-    left: 13.5%;
+    color: #93A8AC;
+    left: 14%;
     top:29%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #tituloneptuno{
     position: absolute;
-    color: azure;
+    color: #93A8AC;
     left: 72%;
     top:29%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /*......................................*/
-/*PLANETAS EN MODELO 3D*/
+/*POSICION PLANETAS EN MODELO 3D*/
 /*......................................*/
 #mercurio{
     position: absolute;
@@ -141,17 +165,17 @@ h1{
 }
 #venus1{
     position: absolute;
-    left: 7%;
-    top: 30%;
+    left: 9%;
+    top: 33%;
 }
 #tierra0{
     position: absolute;
-    left: 65%;
-    top: 30%;
+    left: 59%;
+    top: 18%;
 }
 #tierra{
     position: absolute;
-    left:5%;
+    left:8%;
     top: 30%;
 }
 #luna{
@@ -163,137 +187,153 @@ h1{
 #tamañotierra1{
     position:absolute;
     left:5%;
-    top: 30%;
+    top: 22%;
 }
 #marte{
     position: absolute;
     left: 65%;
-    top: 33%;
+    top: 31%;
 }
 #marte1{
     position: absolute;
     left: 20%;
-    top: 55%;
+    top: 47%;
 }
 #jupiter{
     position: absolute;
-    left: 56%;
-    top: 30%;
+    left: 53%;
+    top: 9%;
 }
 #jupiter1{
     position: absolute;
-    left: 7%;
-    top: 35%;
+    left: 2%;
+    top: 15%;
 }
 #saturno{
     position:absolute;
-    left: 60%;
-    top: 30%;
+    left: 58%;
+    top: 20%;
 }
 #saturno1{
     position: absolute;
-    left: 2%;
-    top: 17%;
+    left: 1%;
+    top: 12%;
 }
 #urano{
     position: absolute;
-    left: 73%;
-    top: 45%;
+    left: 60%;
+    top: 27%;
 }
 #urano1{
     position: absolute;
-    left: 6%;
-    top: 35%;
+    left: 3%;
+    top: 23%;
 }
 #neptuno{
     position: absolute;
-    left: 66%;
-    top: 35%;
+    left: 58%;
+    top: 23%;
 }
 
 /*......................................*/
-/*tamaño de los planetas*/
+/*TAMAÑO DE LOS PLANETAS*/
 /*......................................*/
 
 #tamañomercurio{
     height: 180px;
     width: 180px;
-    margin:0 auto;
+    margin:0;
+    padding:0;
 }
 #tamañovenus{
-    height:350px;
-    width: 350px;
-    margin: 0 auto;
-}
-#tamañovenus1{
     height:300px;
     width: 300px;
-    margin: 0 auto;
+    margin: 0;
+    padding:0;
+}
+#tamañovenus1{
+    height:210px;
+    width: 210px;
+    margin: 0;
+    padding:0;
 }
 #tamañotierra0{
-    height: 300px;
-    width: 300px;
-    margin:0 auto;
+    height: 400px;
+    width: 400px;
+    margin:0;
+    padding:0;
 }
 #tamañotierra{
-    height: 400px;
-    width:400px;
-    margin: 0 auto;
+    height: 340px;
+    width:340px;
+    margin: 0;
+    padding:0;
 }
 #tamañoluna{
-    height: 150px;
-    width:150px;
-    margin:0 auto;
+    height: 120px;
+    width:120px;
+    margin:0;
+    padding:0;
 }
 #tamañotierra1{
-    height: 350px;
-    width: 350px;
-    margin: 0 auto;
+    height: 400px;
+    width: 400px;
+    margin: 0;
+    padding: 0;
 }
 #tamañomarte{
     height: 280px;
     width:280px;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
 }
 #tamañomarte1{
     height:20px;
     width:20px;
-    margin:0 auto;
+    margin:0;
+    padding: 0;
 }
 #tamañojupiter{
-    height: 400px;
-    width:400px;
-    margin:0 auto;
+    height: 520px;
+    width:520px;
+    margin:0;
+    padding:0;
 }
 #tamañojupiter1{
-    height:300px;
-    width:300px;
-    margin:0 auto;
+    height:480px;
+    width:480px;
+    margin:0 ;
+    padding: 0;
 }
 #tamañosaturno{
-    height:370px;
-    width:370px;
-    margin:0 auto;
+    height:400px;
+    width:400px;
+    margin:0 ;
+    padding: 0;
 }
 #tamañosaturno1{
     height:550px;
     width:550px;
-    margin:0 auto;
+    margin:0;
+    padding: 0;
 }
 #tamañourano{
-    height:100px;
-    width:100px;
-    margin:0 auto;
+    height:380px;
+    width:380px;
+    margin:0 ;
+    padding: 0;
 }
 #tamañourano1{
-    height:300px;
-    width:300px;
-    margin:0 auto;
+    height:450px;
+    width:450px;
+    margin:0;
+    padding: 0;
 }
 #tamañoneptuno{
-    height:290px;
-    width:290px;
-    margin:0 auto;
+    height:450px;
+    width:450px;
+    margin:0;
+    padding: 0;
 }
 
 /*......................................*/
@@ -308,12 +348,12 @@ h1{
     top: 47%;
 }
 #lineadistanciaVT{
-    width: 460px;
+    width: 430px;
     height: 5px;
     background-color: gray;
     position: absolute;
-    left: 30%;
-    top: 50%;
+    left: 28%;
+    top: 48%;
 }
 #lineadistanciaTL{
     width: 500px;
@@ -328,40 +368,40 @@ h1{
     height: 5px;
     background-color: gray;
     position: absolute;
-    left: 33%;
+    left: 32%;
     top: 50%;
 }
 #lineadistanciaMJ{
-    width: 430px;
-    height: 5px;
-    background-color: gray;
-    position: absolute;
-    left: 24%;
-    top: 56%;
-}
-#lineadistanciaJS{
-    width: 400px;
-    height: 5px;
-    background-color: gray;
-    position: absolute;
-    left: 30%;
-    top: 55%;
-}
-#lineadistanciaSU{
     width: 410px;
     height: 5px;
     background-color: gray;
     position: absolute;
-    left: 42%;
-    top: 52%;
+    left: 25%;
+    top: 48%;
 }
-#lineadistanciaUN{
-    width: 470px;
+#lineadistanciaJS{
+    width: 330px;
     height: 5px;
     background-color: gray;
     position: absolute;
-    left: 30%;
-    top: 55%
+    left: 34%;
+    top: 49%;
+}
+#lineadistanciaSU{
+    width: 300px;
+    height: 5px;
+    background-color: gray;
+    position: absolute;
+    left: 39%;
+    top: 53%;
+}
+#lineadistanciaUN{
+    width: 350px;
+    height: 5px;
+    background-color: gray;
+    position: absolute;
+    left: 35%;
+    top: 56%
 }
 /*NAVEGACION DE DISTANCIAS TIERRA LUNA*/
 
@@ -400,7 +440,7 @@ h3{
     background-color: black;
     text-align: center;
 }
-li > ul {
+li > ul li p{
     font-size: 10px;
 }
 h3:hover{
