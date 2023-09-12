@@ -10,10 +10,8 @@ const fullpageV1 = new fullpage("#fullpage", {
 
     navigation: true, // Muesta la barra de navegación.
     menu: '#menu', // Menu de navegación.
-    anchors: ['inicio', 'Mercurio-Venus', 'Venus-Tierra', 'Tierra-Luna', 'Tierra-Marte', 'Marte-Jupiter', 'Jupiter-Saturno', 'Saturno-Urano', 'Urano-Neptuno', 'contactos'], // Anclas, las usamos para identificar cada seccion y poder acceder a ellas con el menu.
-    navigationTooltips: ['inicio', 'Mercurio-Venus', 'Venus-Tierra', 'Tierra-Luna', 'Tierra-Marte', 'Marte-Jupiter', 'Jupiter-Saturno', 'Saturno-Urano', 'Urano-Neptuno', 'contactos'], // Tooltips que mostrara por cada boton.
+    // anchors: ['inicio', 'Mercurio', 'Venus', 'Tierra', 'Tierra', 'Marte', 'Jupiter', 'Saturno', 'Urano',], // Anclas, las usamos para identificar cada seccion y poder acceder a ellas con el menu.
+    navigationTooltips: ['inicio', 'Mercurio', 'Venus', 'Tierra', 'Marte', 'Jupiter', 'Saturno', 'Urano','Neptuno'], // Tooltips que mostrara por cada boton.
     showActiveTooltip: true, // Mostrar tooltip activa.
-
-
 
 });

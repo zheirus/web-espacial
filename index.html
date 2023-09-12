@@ -6,65 +6,71 @@
 	<meta name="viewport" content="width=divice-width, initial-scale=1.0"/>
 	<link rel="stylesheet"  href="CSS/estilo.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Space</title>
 </head>
 <body>
     
 	<main id="fullpage">
-		<header class="section">
-            <h1>Sistema Solar</h1>
-        </header>
-        <section class="section">
-            <h1 id="titulomercurio">MERCURIO</h1>
-            <div id="mercurio">
-                <model-viewer 
-                bounds="tight"
-                src="CSS/multimedia/mercurio.glb" 
-                ar 
-                ar-modes="webxr scene-viewer quick-look" 
-                camera-controls environment-image="neutral" 
-                auto-rotate
-                id="tamañomercurio">
-                </model-viewer>
-            </div>
-            <div id="cam">
-                <ul>
-                    <li>La vida es imposible</li>
-                    <li>DIAMETRO: 4879.4 km</li>
-                    <li>UN AÑO: 88 Dias.</li>
-                    <li>EDAD: 4503 millones de años</li>
-                    <li>DESCUBRIMIENTO: 1631</li>
-                    <li>GRAVEDAD: 3.7  m/s²</li>
-                </ul>
-            </div>
-            <h1 id="titulovenus">VENUS</h1>
-            <div id="venus">
-                <model-viewer 
-                bounds="tight" 
-                src="CSS/multimedia/venus.glb" 
-                ar 
-                ar-modes="webxr scene-viewer quick-look" 
-                camera-controls 
-                environment-image="neutral" 
-                poster="css/multimedia/postervenus.png."  
-                auto-rotate
-                id="tamañovenus">
-                </model-viewer>
-            </div>
-            <div id="cav">
-                <ul>
-                    <li>La vida es imposible</li>
-                    <li>DIAMETRO: 12,104 km</li>
-                    <li>UN AÑO: 225 Dias.</li>
-                    <li>EDAD: 4,503 millones de años</li>
-                    <li>DESCUBRIMIENTO: 1610</li>
-                    <li>GRAVEDAD: 8,87  m/s²</li>
-                </ul>
-            </div>
-            <div id="lineadistanciaMV"></div>
+		<section class="section" id="inicio">
+            <h1 class="animate__animated animate__backInDown"><p class="hover-underline-animation"> Sistema Solar</p></h1>
         </section>
-        <section class="section">
-            <h1 id="titulovenus1">VENUS</h1>
+        <section class="section" id="Mercurio">
+            <h1 class="sistemasolarcentral">Sistema Solar</h1>    
+            <div>
+                <model-viewer 
+                    bounds="tight"
+                    src="CSS/multimedia/mercurio.glb" 
+                    ar 
+                    ar-modes="webxr scene-viewer quick-look" 
+                    camera-controls environment-image="neutral" 
+                    auto-rotate
+                    id="tamañomercurio">
+                </model-viewer>
+            </div>
+            <h2 id="titulomercurio">Mercurio</h2>
+            <div class="textomercurio">
+                <p>Mercurio es el planeta más pequeño de nuestro sistema solar.Simplemente,
+                es un poco más grande que la Luna de la Tierra. Es el planeta más cercano al Sol, 
+                pero es realmente el más cálido. Venus es el más cálido.</p>
+            </div>
+            <button class="mas informacion">mas informacion</button>
+            <div>
+                <nav>
+                    <ul>
+                        <li>
+                            <h3>periodo de rotacion</h3>
+                            <h4>243 <p>dias terrestres</p></h4>
+                        </li>
+                        <li>
+                            <h3>diametro de mercurio</h3>
+                            <h4>12,103.6<p>KM</p></h4>
+                        </li>
+                        <li>
+                            <h3>Distancia de Mercurio al Sol</h3>
+                            <h4>0.72 au<p>108millon km</p></h4>
+                        </li>
+                        <li>
+                            <h3>Temperatura media de la superficie</h3>
+                            <h4>375 K <p>462°C, 863 °F</p></h4>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="elipce"></button>
+            </div>
+                <!-- <div id="cam">
+                    <ul>
+                        <li>La vida es imposible</li>
+                        <li>DIAMETRO: 4879.4 km</li>
+                        <li>UN AÑO: 88 Dias.</li>
+                        <li>EDAD: 4503 millones de años</li>
+                        <li>DESCUBRIMIENTO: 1631</li>
+                        <li>GRAVEDAD: 3.7  m/s²</li>
+                    </ul>
+                </div> -->
+        </section>
+        <section class="section" id="VENUS">
+            <h1 class="sistemasolarcentral">Sistema Solar</h1>
             <div id="venus1">
                 <model-viewer 
                 bounds="tight" 
@@ -75,10 +81,11 @@
                 environment-image="neutral" 
                 poster="css/multimedia/postervenus.png."  
                 auto-rotate
-                id="tamañovenus1">
-                </model-viewer>
-            </div>
-            <div id="cav1">
+                id="tamañovenus">
+            </model-viewer>
+        </div>
+            <h2 id="titulovenus1">VENUS</h2>
+            <div id="cav">
                 <ul>
                     <li>La vida es imposible</li>
                     <li>DIAMETRO: 12,104 km</li>
@@ -88,35 +95,10 @@
                     <li>GRAVEDAD: 8,87 m/s²</li>
                 </ul>
             </div>
-            <h1 id="titulotierra0">TERRA</h1>
-            <div id="tierra0">
-                <model-viewer 
-                bounds="tight" 
-                src="CSS/multimedia/tierral.glb" 
-                ar  
-                camera-controls
-                ar-modes="webxr scene-viewer quick-look" 
-                environment-image="neutral" 
-                poster="CSS/multimedia/postertierra.png."  
-                exposure="1.59" 
-                auto-rotate
-                id="tamañotierra0"
-                ></model-viewer>
-            </div>
-            <div id="cat0">
-                <ul>
-                    <li>La vida es posible</li>
-                    <li>DIAMETRO: 12,742 km</li>
-                    <li>UN AÑO: 365 Dias.</li>
-                    <li>EDAD: 4.543 millones de años</li>
-                    <li>DESCUBRIMIENTO: nacimos aqui :v</li>
-                    <li>GRAVEDAD: 9.807 m/s²</li>
-                </ul>
-            </div>
-            <div id="lineadistanciaVT"></div>
+            <button class="mas informacion">mas informacion</button>
         </section>
-        <section class="section">
-            <h1 id="titulotierra">TERRA</h1>
+        <section class="section" id="tierra">
+            <h1 class="sistemasolarcentral">Sistema Solar</h1>
             <div id="tierra">
                 <model-viewer 
                 bounds="tight" 
@@ -131,7 +113,6 @@
                 id="tamañotierra"
                 ></model-viewer>
             </div>
-            <h2 id="tituloluna">LUNA</h2>
             <div id="luna">
                 <model-viewer 
                 bounds="tight" 
@@ -145,63 +126,21 @@
                 id="tamañoluna"
                 ></model-viewer>
             </div>
-            
-            <div id="lineadistanciaTL"></div>
-            <div id="distanciaTL">
-                <ul class="nav">
-                    <h3 id="dtl">Distancia</h3>	
-                    <li><p>M. Pasadas</p>
-                        <ul>
-                            <li><span></span><p>Apollo 1: 21/02/1967 Fracaso</p></li>
-                            <li><p>Apollo 6: 04/04/1968 Exito Parcial</p></li>
-                            <li><p>Apollo 8: 21/12/1968 Exito</p></li>
-                            <li><p>Apollo 10: 18/05/1969 Exito</p></li>
-                            <li><p>Apollo 11: 16/07/1969 Exito</p></li>
-                            <li><p>Apollo 13: 11/04/1970 Exito Parcial</p></li>
-                            <li><p>Apollo 15: 26/07/1971 Exito</p></li>
-                            <li><p>Apollo Soyuz: 15/07/1975 Exito</p></li>
-                        </ul>
-                    </li>
-                    <li><p>M. Futuras</p>
-                        <ul>
-                            <li><p>EE.UU 2022 NASA En desarrolo</p></li>
-                            <li><p>Rusia 2022 ROSCOSMOS En desarrollo</p></li>
-                            <li><p>Japon 2022 JAXA En desarrollo</p></li>
-                            <li><p>Rusia 2023 ROSCOSMOS En desarrollo</p></li>
-                            <li><p>Rusia 2027 ROSCOSMOS En desarrollo</p></li>
-                            <li><p>Rusia 2029 ROSCOSMOS En desarrollo</p></li>
-                        </ul>
-                    </li>
-                </ul>	
-            </div>
-        </section>
-        <section class="section">
-            <h1 id="titulotierra1">TERRA</h1>
-            <div id="tierra1">
-                <model-viewer 
-                bounds="tight" 
-                src="CSS/multimedia/tierral.glb" 
-                ar  
-                camera-controls
-                ar-modes="webxr scene-viewer quick-look" 
-                environment-image="neutral" 
-                poster="CSS/multimedia/postertierra.png."  
-                exposure="1.59" 
-                auto-rotate
-                id="tamañotierra1"
-                ></model-viewer>
-            </div>
-            <div id="cat1">
+            <h2 id="titulotierra">TERRA</h2>
+            <div id="cav">
                 <ul>
-                    <li>La vida es posible</li>
-                    <li>DIAMETRO: 12,742 km</li>
-                    <li>UN AÑO: 365 Dias.</li>
-                    <li>ANTIGUEDAD: 4.543 millones de años</li>
-                    <li>DESCUBRIMIENTO: nacimos aqui :v</li>
-                    <li>GRAVEDAD: 9.807 m/s²</li>
+                    <li>La vida es imposible</li>
+                    <li>DIAMETRO: 12,104 km</li>
+                    <li>UN AÑO: 225 Dias.</li>
+                    <li>EDAD: 4.503 millones de años</li>
+                    <li>DESCUBRIMIENTO: 1610</li>
+                    <li>GRAVEDAD: 8,87 m/s²</li>
                 </ul>
             </div>
-            <h1 id="titulomarte">MARTE</h1>
+            <button class="mas informacion">mas informacion</button>
+        </section>
+        <section class="section" id="marte">
+            <h1 class="sistemasolarcentral">Sistema Solar</h1>
             <div id="marte">
                 <model-viewer 
                 bounds="tight" 
@@ -213,8 +152,9 @@
                 poster="css/multimedia/postermarte.png." 
                 auto-rotate
                 id="tamañomarte">
-                </model-viewer>
+            </model-viewer>
             </div>
+            <h2 id="titulomarte">MARTE</h2>
             <div id="cama">
                 <ul>
                     <li>La vida es posible</li>
@@ -225,38 +165,14 @@
                     <li>GRAVEDAD: 3,721 m/s²</li>
                 </ul>
             </div>
-            <div id="lineadistanciaTM"></div>
+            <button class="mas informacion">mas informacion</button>
         </section>
-        <section class="section">
-            <h1 id="titulomarte1">MARTE</h1>
-            <div id="marte1">
-                <model-viewer 
-                bounds="tight" 
-                src="CSS/multimedia/marte.glb" 
-                ar 
-                ar-modes="webxr scene-viewer quick-look"
-                camera-controls 
-                environment-image="neutral" 
-                poster="css/multimedia/postermarte.png." 
-                auto-rotate
-                id="tamañomarte1">
-                </model-viewer>
-            </div>
-            <div id="cama1">
-                <ul>
-                    <li>La vida es posible</li>
-                    <li>DIAMETRO: 6,779 km</li>
-                    <li>UN AÑO: 687 Dias.</li>
-                    <li>EDAD: 4,000 millones de años</li>
-                    <li>DESCUBRIMIENTO: 1610</li>
-                    <li>GRAVEDAD: 3,721 m/s²</li>
-                </ul>
-            </div>
-            <h1 id="titulojupiter">JUPITER</h1>
+        <section class="section" id="jupiter">
+            <h1 class="sistemasolarcentral">Sistema Solar</h1>
             <div id="jupiter">
                 <model-viewer 
                 bounds="tight" 
-                src="CSS/multimedia/jupiterl.glb" 
+                src="CSS/multimedia/jupiter.glb" 
                 ar 
                 ar-modes="webxr scene-viewer quick-look" 
                 camera-controls 
@@ -266,6 +182,7 @@
                 id="tamañojupiter">
                 </model-viewer>
             </div>
+            <h2 id="titulojupiter">JUPITER</h2>
             <div id="caj">
                 <ul>
                     <li>La vida puede ser posible</li>
@@ -276,38 +193,14 @@
                     <li>GRAVEDAD: 24,79 m/s²</li>
                 </ul>
             </div>
-            <div id="lineadistanciaMJ"></div>
+            <button class="mas informacion">mas informacion</button>
         </section>
-        <section class="section">
-            <h1 id="titulojupiter1">JUPITER</h1>
-            <div id="jupiter1">
-                <model-viewer 
-                bounds="tight" 
-                src="CSS/multimedia/jupiterl.glb" 
-                ar 
-                ar-modes="webxr scene-viewer quick-look" 
-                camera-controls 
-                environment-image="neutral" 
-                poster="css/multimedia/posterjupiter.png." 
-                auto-rotate
-                id="tamañojupiter1">
-                </model-viewer>
-            </div>
-            <div id="caj1">
-                <ul>
-                    <li>La vida puede ser posible</li>
-                    <li>DIAMETRO: 139,820 km</li>
-                    <li>UN AÑO: 12 años.</li>
-                    <li>EDAD: 4,603 millones de años</li>
-                    <li>DESCUBRIMIENTO: 1600</li>
-                    <li>GRAVEDAD: 24,79 m/s²</li>
-                </ul>
-            </div>
-            <h1 id="titulosaturno">SATURNO</h1>
+        <section class="section" id="saturno">
+            <h1 class="sistemasolarcentral">Sistema Solar</h1>
             <div id="saturno">
                 <model-viewer 
                 bounds="tight" 
-                src="css/multimedia/saturnol.glb" 
+                src="css/multimedia/saturno.glb" 
                 ar 
                 ar-modes="webxr scene-viewer quick-look" 
                 camera-controls 
@@ -318,6 +211,7 @@
                 id="tamañosaturno">
                 </model-viewer>
             </div>
+            <h2 id="titulosaturno">SATURNO</h2>
             <div id="cas">
                 <ul>
                     <li>La vida puede ser posible</li>
@@ -328,39 +222,14 @@
                     <li>GRAVEDAD: 10,44 m/s²</li>
                 </ul>
             </div>
-            <div id="lineadistanciaJS"></div>
+            <button class="mas informacion">mas informacion</button>
         </section>
-        <section class="section">
-            <h1 id="titulosaturno1">SATURNO</h1>
-            <div id="saturno1">
-                <model-viewer 
-                bounds="tight" 
-                src="css/multimedia/saturnol.glb" 
-                ar 
-                ar-modes="webxr scene-viewer quick-look" 
-                camera-controls 
-                environment-image="neutral" 
-                poster="css/multimedia/postersaturno.png."  
-                auto-rotate
-                exposure="0.50"
-                id="tamañosaturno1">
-                </model-viewer>
-            </div>
-            <div id="cas1">
-                <ul>
-                    <li>La vida es imposible</li>
-                    <li>DIAMETRO: 116,460 km</li>
-                    <li>UN AÑO: 29 años.</li>
-                    <li>EDAD: 4,503 millones de años</li>
-                    <li>DESCUBRIMIENTO: 1610</li>
-                    <li>GRAVEDAD: 10,44 m/s²</li>
-                </ul>
-            </div>
-            <h1 id="titulourano">URANO</h1>
+        <section class="section" id="urano">
+            <h1 class="sistemasolarcentral">Sistema Solar</h1>
             <div id="urano">
                 <model-viewer 
                 bounds="tight" 
-                src="css/multimedia/uranol.glb" 
+                src="css/multimedia/urano.glb" 
                 ar 
                 ar-modes="webxr scene-viewer quick-look" 
                 camera-controls 
@@ -370,6 +239,7 @@
                 id="tamañourano">
                 </model-viewer>
             </div>
+            <h2 id="titulourano">URANO</h2>
             <div id="cau">
                 <ul>
                     <li>La vida es imposible</li>
@@ -380,38 +250,14 @@
                     <li>GRAVEDAD: 8,87 m/s²</li>
                 </ul>
             </div>
-            <div id="lineadistanciaSU"></div>
+            <button class="mas informacion">mas informacion</button>
         </section>
-        <section class="section">
-            <h1 id="titulourano1">URANO</h1>
-            <div id="urano1">
-                <model-viewer 
-                bounds="tight" 
-                src="css/multimedia/uranol.glb" 
-                ar 
-                ar-modes="webxr scene-viewer quick-look" 
-                camera-controls 
-                environment-image="neutral" 
-                poster="css/multimedia/posterurano.png." 
-                auto-rotate
-                id="tamañourano1">
-                </model-viewer>
-            </div>
-            <div id="cau1">
-                <ul>
-                    <li>La vida puede ser posible</li>
-                    <li>DIAMETRO: 50,724 km</li>
-                    <li>UN AÑO: 84 años.</li>
-                    <li>EDAD: 4,503 millones de años</li>
-                    <li>DESCUBRIMIENTO: 1781</li>
-                    <li>GRAVEDAD: 8,87 m/s²</li>
-                </ul>
-            </div>
-            <h1 id="tituloneptuno">NEPTUNO</h1>
+        <section class="section" id="neptuno">
+            <h1 class="sistemasolarcentral">Sistema Solar</h1>
             <div id="neptuno">
                 <model-viewer 
                 bounds="tight"
-                src="CSS/multimedia/neptunol.glb" 
+                src="CSS/multimedia/neptuno.glb" 
                 ar 
                 ar-modes="webxr scene-viewer quick-look" 
                 camera-controls 
@@ -421,6 +267,7 @@
                 id="tamañoneptuno">
                 </model-viewer>
             </div>
+            <h2 id="tituloneptuno">NEPTUNO</h2>
             <div id="can">
                 <ul>
                     <li>La vida es imposible</li>
@@ -431,11 +278,8 @@
                     <li>GRAVEDAD: 11,15 m/s²</li>
                 </ul>
             </div>
-            <div id="lineadistanciaUN"></div>
+            <button class="mas informacion">mas informacion</button>
         </section>
-        <footer class="section">
-            <h1>contactos</h1>
-        </footer>
 	</main>    
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.js"></script>
 	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
